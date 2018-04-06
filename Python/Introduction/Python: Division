@@ -1,0 +1,4 @@
+if __name__ == '__main__':
+    a,b = [float(raw_input()), float(raw_input())]
+    print a//b
+    print a/b
