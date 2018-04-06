@@ -1,0 +1,9 @@
+_,C,A,B= [raw_input().split(),raw_input().split(),set(raw_input().split()),set(raw_input().split())]
+
+
+b = []
+c = []
+for i in C:
+    b.append(i in A)
+    c.append(i in B)
+print sum(b)-sum(c)
