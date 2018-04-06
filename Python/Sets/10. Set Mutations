@@ -1,0 +1,14 @@
+_,a = [raw_input(), set(map(int,raw_input().split()))]
+
+for i in range(int(raw_input())):
+    b,c = [raw_input().split(),set(map(int,raw_input().split()))]
+    if 'intersection_update' in b:
+        a.intersection_update(c)
+    if 'update' in b:
+        a.update(c)
+    if 'symmetric_difference_update' in b:
+        a.symmetric_difference_update(c)
+    if 'difference_update' in b:
+        a.difference_update(c)
+
+print sum(set(a))
