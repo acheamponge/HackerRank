@@ -1,0 +1,13 @@
+d = {}
+
+for i in range(int(raw_input())*2):
+    if i%2 == 0:
+        b = raw_input()
+        d[b] = float(raw_input())
+
+b = []
+for key,value in d.items():
+    if value == sorted(list(set(d.values())))[1]:
+        b.append(key)
+for i in sorted(b):
+    print i
