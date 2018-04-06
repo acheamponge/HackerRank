@@ -1,0 +1,3 @@
+b= set()
+for i in range(int(raw_input())): b.add(raw_input())
+print len(b)
