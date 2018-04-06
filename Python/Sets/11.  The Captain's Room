@@ -1,0 +1,4 @@
+from collections import Counter
+a,b = [int(raw_input()), map(int,raw_input().split())]
+
+print Counter(b).most_common()[-1][0]
