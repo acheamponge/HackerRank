@@ -1,0 +1,13 @@
+n = raw_input()
+s = set(map(int, raw_input().split())) 
+
+
+for i in range(int(raw_input())):
+    b = raw_input().split()
+    if 'pop' in b:
+        s.pop()
+    if 'remove' in b:
+        s.remove(int(b[1]))
+    if 'discard' in b:
+        s.discard(int(b[1]))
+print sum(s)
