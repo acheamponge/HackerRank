@@ -1,0 +1,14 @@
+if __name__ == '__main__':
+    n = int(raw_input())
+    b = 'Weird'
+    if n%2 == 0:
+        if n in range(2,6):
+            b = 'Not Weird'
+        if n in range(6,21):
+            b = 'Weird'
+        if n > 20:
+            b = 'Not Weird'
+    else:
+        b = 'Weird'
+    print b
+         
