@@ -1,0 +1,10 @@
+d = {}
+
+for i in range(int(raw_input())):
+    b = raw_input().split()
+    d.setdefault(b[0],[]).append(map(float,b[1:]))
+
+a = raw_input()
+for key,value in d.items():
+    if key == a:
+        print ('%.2f' % (float(sum(value[0]))/float(len(value[0])))) 
