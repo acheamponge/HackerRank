@@ -1,0 +1,18 @@
+if __name__ == '__main__':
+    c = []
+    for i in range(int(raw_input())):
+        b = raw_input().split()
+        if 'insert' in b:
+            c.insert(int(b[1]),int(b[2]))
+        if 'print' in b:
+            print c
+        if 'remove' in b:
+            c.remove(int(b[1]))
+        if 'append' in b:
+            c.append(int(b[1]))
+        if 'sort' in b:
+            c.sort()
+        if 'pop' in b:
+            c.pop()
+        if 'reverse' in b:
+            c.reverse()
