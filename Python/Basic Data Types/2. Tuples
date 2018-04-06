@@ -1,0 +1,3 @@
+if __name__ == '__main__':
+    a,b = [raw_input(),tuple(map(int,raw_input().split()))]
+    print hash(b)    
