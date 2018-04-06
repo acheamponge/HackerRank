@@ -1,0 +1,4 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+a,b,c,d = [raw_input(),set(raw_input().split()),raw_input(),set(raw_input().split())]
+
+for i in sorted(map(int,(list(b.difference(d)) + list(d.difference(b))))): print i
