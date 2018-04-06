@@ -1,0 +1,10 @@
+a=set(map(int, raw_input().split()))
+f= True
+for i in range(int(raw_input())):
+    b=set(map(int, raw_input().split()))
+    if len(b.difference(a))!=0: 
+        f=False
+    else:
+        if len(b)==len(a):
+            f=False
+print f
