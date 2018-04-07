@@ -1,2 +1,2 @@
 # Hackerrank
-This repository contains solutions to Hackerranks Python challenges.
+This repository contains solutions to Hackerrank's Python challenges. 
