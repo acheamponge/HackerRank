@@ -1,0 +1,13 @@
+def score_words(words):
+    a = ['a','e','i','o','u','y','A','E','I','O','U','Y']
+    score = 0
+    for i in words:
+        num_vow = 0
+        for t in i:
+            if t in a:
+                num_vow += 1
+        if num_vow%2 == 0:
+            score += 2
+        else:
+            score += 1
+    return score
